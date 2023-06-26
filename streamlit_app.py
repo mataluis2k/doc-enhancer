@@ -20,7 +20,7 @@ def generate_response(uploaded_file, openai_api_key, query_text, context_text):
         retriever = db.as_retriever()
         # Create QA chain
         qa = RetrievalQA.from_chain_type(llm=OpenAI(openai_api_key=openai_api_key), chain_type='stuff', retriever=retriever)
-        question = "'" + context_text + "'" + query_text
+        question = "'" + context_text + "' " + query_text
         return qa.run(question)
 
 
