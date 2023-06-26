@@ -1,6 +1,6 @@
-# 🦜🔗 LangChain - Ask the Doc
+# 🦜🔗 LangChain - Doc enhancer
 
-Build a Document Question Answering app using LangChain and Streamlit.
+Build a Document Enhancer app using LangChain and Streamlit.
 
 ## Demo App
 
